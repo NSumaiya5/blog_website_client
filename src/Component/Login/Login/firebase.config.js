@@ -1,9 +1,10 @@
 const firebaseConfig = {
-    apiKey: "AIzaSyDdFnVumMItZEYvwVI5VULTgPh8Yylr9G8",
-    authDomain: "blogpost5.firebaseapp.com",
-    projectId: "blogpost5",
-    storageBucket: "blogpost5.appspot.com",
-    messagingSenderId: "207555731829",
-    appId: "1:207555731829:web:e2e0a4b3d0d76a4839333c"
-  };
+  apiKey: "AIzaSyBpE8qXYiMPC9JVOuH5KC14apeDvD6rrfc",
+  authDomain: "blogs-c798f.firebaseapp.com",
+  projectId: "blogs-c798f",
+  storageBucket: "blogs-c798f.appspot.com",
+  messagingSenderId: "286994221231",
+  appId: "1:286994221231:web:fbb7d3b247c55a20092c5a"
+};
   export default firebaseConfig;
+

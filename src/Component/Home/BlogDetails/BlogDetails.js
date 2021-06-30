@@ -14,7 +14,7 @@ const BlogDetails = ({blog}) => {
             {
                 blog.image ? <img style={{height: '200px', width: '200px'}} className="img-animation" src={`data:image/jpeg;base64,${blog.image.img}`}alt=""/>
                 :
-                <img style={{height: '200px', width: '200px'}} className="img-fluid mb-3 img-animation" src={`http://localhost:5000//${blog.img}`} alt=""/>
+                <img style={{height: '200px', width: '200px'}} className="img-fluid mb-3 img-animation" src={`  https://afternoon-temple-99986.herokuapp.com//${blog.img}`} alt=""/>
             }
             </div>
             <div style= {{backgroundColor:'#ffb380', color:'white'}} class="card-body fw-bolder">

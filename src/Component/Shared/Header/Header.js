@@ -27,7 +27,7 @@ const Header = () => {
     }
     return (
         <div>
-        <Navbar bg="danger" expand="lg">
+        <Navbar bg="success" expand="lg">
         <Navbar.Brand  className=" rounded text-light p-3" href="/home"><h2>BLOG SITE</h2></Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse className="justify-content-end ">
@@ -40,5 +40,7 @@ const Header = () => {
     </div>
     );
 };
+
+
 
 export default Header;
