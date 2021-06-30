@@ -6,7 +6,7 @@ const ManageBlog = () => {
     const [blogs, setBlogs] = useState([]);
 
     useEffect(() => {
-        fetch('https://agile-basin-54523.herokuapp.com/blogs')
+        fetch('http://localhost:5000/blogs')
             .then(res => res.json())
             .then(data => setBlogs(data))
     }, [])
@@ -14,7 +14,7 @@ const ManageBlog = () => {
 
     const handleDelete = (id) => {
 
-        fetch(`https://agile-basin-54523.herokuapp.com/deleteBlogs/${id}`, {
+        fetch(`http://localhost:5000/deleteBlogs/${id}`, {
             method : "DELETE"
         })
         .then(res => res.json())
@@ -26,7 +26,7 @@ const ManageBlog = () => {
         })
     }
     const deleteBlogs  = () =>{
-        fetch(`https://agile-basin-54523.herokuapp.com/blogs`)
+        fetch(`http://localhost:5000/blogs`)
         .then(res =>res.json())
         .then(data => setBlogs(data))
        }
@@ -60,7 +60,7 @@ const ManageBlog = () => {
                                                             {
                                                                 blog.image ? <img style={{ width: "8rem", height: "8rem" }} src={`data:image/png;base64,${blog.image.img}`} alt="" />
                                                                     :
-                                                                    <img style={{ width: "8rem", height: "8rem" }} className="img-fluid mb-3" src={`https://agile-basin-54523.herokuapp.com/${blog.img}`} alt="" />
+                                                                    <img style={{ width: "8rem", height: "8rem" }} className="img-fluid mb-3" src={`http://localhost:5000/${blog.img}`} alt="" />
                                                             }
                                                         </td>
                                                         <td className="w-25 btn-style">

@@ -25,7 +25,7 @@ const AddBlog = () => {
         
 
 
-        fetch("https://agile-basin-54523.herokuapp.com/addBlog", {
+        fetch("http://localhost:5000/addBlog", {
             method: 'POST',
             body: formData
         })

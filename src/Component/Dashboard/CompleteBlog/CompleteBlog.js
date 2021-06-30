@@ -7,7 +7,7 @@ const CompleteBlog = () => {
     const { id } = useParams();
 
     useEffect(() => {
-        fetch(`https://agile-basin-54523.herokuapp.com/blogs/${id}`)
+        fetch(`http://localhost:5000/blogs/${id}`)
             .then(res => res.json())
             .then(data => setBlog(data))
     }, [id])
@@ -18,7 +18,7 @@ const CompleteBlog = () => {
             {
                 blog.image ? <img style={{height: '200px', width: '200px'}} className="img-animation" src={`data:image/jpeg;base64,${blog.image.img}`}alt=""/>
                 :
-                <img  style={{height: '200px', width: '200px'}} className="img-fluid mb-3 img-animation" src={`https://agile-basin-54523.herokuapp.com//${blog.img}`} alt=""/>
+                <img  style={{height: '200px', width: '200px'}} className="img-fluid mb-3 img-animation" src={`http://localhost:5000//${blog.img}`} alt=""/>
             }
             </div>
                
